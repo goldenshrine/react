@@ -1,13 +1,13 @@
 import React from "react";
 import { Bookmark } from "lucide-react";
-const newCard = (props) => {
+const NewCard = (props) => {
   console.log(props);
   return (
     <div>
       <div className="card">
         <div>
           <div className="top">
-            <img src={props.brandlogo} alt="" />
+            <img src={props.brandLogo} alt="" />
             <button>
               Save <Bookmark size={12} />
             </button>
@@ -37,4 +37,4 @@ const newCard = (props) => {
   );
 };
 
-export default newCard;
+export default NewCard;
