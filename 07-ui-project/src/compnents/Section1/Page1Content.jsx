@@ -4,7 +4,8 @@ import LeftContent from "./LeftContent";
 
 const Page1Content = () => {
   return (
-    <div className="py-10 flex items-center gap-10 h-[90vh]">
+    <div className="pb-18 pt-4 flex items-center gap-10 h-[90vh] px-14">
+      {/*<--chosen different codes from lecture (pb-16 pt-6, px-18) ~ window sizing */}
       <LeftContent />
       <RightCongtent />
     </div>
