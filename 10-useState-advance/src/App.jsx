@@ -98,23 +98,47 @@
 
 // export default App;
 
-////////////////////////////////////////// Preview
+////////////////////////////////////////// 05 Preview
 // previos value same rahe new value change ho jaye
+
+// import React, { useState } from "react";
+
+// const App = () => {
+//   const [num, setnum] = useState({ user: "prince", age: 17 });
+
+//   const btnClicked = () => {
+//     setnum((prev) => ({ ...prev, age: 50 }));
+//   };
+
+//   return (
+//     <div>
+//       <h1>
+//         {num.user},{num.age}
+//       </h1>
+//       <button onClick={btnClicked}>click!</button>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+////////////////////////////////////////// 06 - Batch update
 
 import React, { useState } from "react";
 
 const App = () => {
-  const [num, setnum] = useState({ user: "prince", age: 17 });
+  const [num, setnum] = useState(10);
 
   const btnClicked = () => {
-    setnum((prev) => ({ ...prev, age: 50 }));
+    setnum((prev) => prev + 1);
+    setnum((prev) => prev + 1);
+    setnum((prev) => prev + 1);
+    // batch mein update ho rahe hain teeno 3+ horhe
   };
 
   return (
     <div>
-      <h1>
-        {num.user},{num.age}
-      </h1>
+      <h1>{num}</h1>
       <button onClick={btnClicked}>click!</button>
     </div>
   );
