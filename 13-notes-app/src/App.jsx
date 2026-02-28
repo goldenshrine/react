@@ -13,6 +13,8 @@ function App() {
         }}
         className="flex gap-4 lg:w-1/2 flex-col items-start p-10"
       >
+        <h1 className="text-4xl font-bold">Add Notes</h1>
+
         <input
           type="text"
           placeholder="Enter Notes Heading"
@@ -29,10 +31,13 @@ function App() {
         </button>
       </form>
 
-      <div className="flex lg:w-1/2 bg-gray-800 gap-5 flex flex-wrap p-10">
-        <h1>Your Notes</h1>
-        <div className="h-32 w-  bg-white rounded-2xl"></div>
-        <div className="h-32 w-32  bg-white rounded-2xl"></div>
+      <div className="lg:w-1/2 lg:border-l-2 p-10">
+        <h1 className="text-4xl font-bold">Recent Notes</h1>
+        <div className="flex flex-wrap gap-5 mt-5 h-full h-full overflow-auto">
+          <div className="h-52 w-40  bg-white rounded-2xl"></div>
+          <div className="h-52 w-40  bg-white rounded-2xl"></div>
+          <div className="h-52 w-40  bg-white rounded-2xl"></div>
+        </div>
       </div>
     </div>
   );
