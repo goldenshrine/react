@@ -21,6 +21,12 @@ function App() {
     setDetails("");
   };
 
+  const deleteNote = (idx) => {
+    const copyTask = [...task];
+    copyTask.splice(idx, 1);
+    setTask(copyTask);
+  };
+
   return (
     <div className=" h-screen lg:flex bg-black text-white ">
       <form
@@ -64,16 +70,27 @@ function App() {
             return (
               <div
                 key={idx}
-                className="h-52 w-40 py-8 px-4 bg-cover text-black rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] "
+                className=" flex justify-between flex-col items-start relative h-52 w-40 bg-cover rounded-xl text-black pt-9 pb-4 px-4 bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] "
               >
                 {/* // Always open the image in a new tab first, then right-click and copy the image address.
               // Otherwise, you may get a long base64 URL that might not work properly. */}
-                <h3 className="leading-tight text-xl font-bold">
+
+                <h3 className="leading-tight text-lg font-bold">
                   {elem.title}
                 </h3>
-                <p className="mt-4 leading-tight font-medium text-gray-500">
+
+                <p className="mt-2 leading-tight text-xs font-semibold text-gray-600">
                   {elem.details}
                 </p>
+
+                <button
+                  onClick={() => {
+                    deleteNote(idx);
+                  }}
+                  className="w-full cursor-pointer active:scale-97 bg-red-600 py-1 text-xs text-white font-bold rounded"
+                >
+                  Delete
+                </button>
               </div>
             );
           })}
