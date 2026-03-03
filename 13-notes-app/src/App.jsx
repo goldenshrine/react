@@ -64,12 +64,16 @@ function App() {
             return (
               <div
                 key={idx}
-                className="h-52 w-40 p-4 text-black bg-white rounded-2xl"
+                className="h-52 w-40 py-8 px-4 bg-cover text-black rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] "
               >
+                {/* // Always open the image in a new tab first, then right-click and copy the image address.
+              // Otherwise, you may get a long base64 URL that might not work properly. */}
                 <h3 className="leading-tight text-xl font-bold">
                   {elem.title}
                 </h3>
-                <p>{elem.details}</p>
+                <p className="mt-4 leading-tight font-medium text-gray-500">
+                  {elem.details}
+                </p>
               </div>
             );
           })}
