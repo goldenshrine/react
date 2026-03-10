@@ -12,11 +12,14 @@ const Navbar = () => {
         <Link className="text-medium font-semibold" to="/about">
           About
         </Link>
-        <Link className="text-medium font-semibold" to="/Contact">
-          Contact
+        <Link className="text-medium font-semibold" to="/Courses">
+          Courses
         </Link>
         <Link className="text-medium font-semibold" to="/Product">
           Product
+        </Link>
+        <Link className="text-medium font-semibold" to="/Contact">
+          Contact
         </Link>
       </div>
     </div>
