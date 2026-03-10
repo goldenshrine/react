@@ -1,22 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="flex py-4 px-8 items-center bg-cyan-900 justify-between">
       <h2 className="text-2xl font-bold">Prince</h2>
       <div className="flex gap-10">
-        <a className="text-medium font-bold" href="/">
+        <Link className="text-medium font-semibold" to="/">
           Home
-        </a>
-        <a className="text-medium font-bold" href="/About">
+        </Link>
+        <Link className="text-medium font-semibold" to="/about">
           About
-        </a>
-        <a className="text-medium font-bold" href="/Contact">
+        </Link>
+        <Link className="text-medium font-semibold" to="/Contact">
           Contact
-        </a>
-        <a className="text-medium font-bold" href="/Product">
+        </Link>
+        <Link className="text-medium font-semibold" to="/Product">
           Product
-        </a>
+        </Link>
       </div>
     </div>
   );
