@@ -7,8 +7,8 @@ const Product = () => {
       <div className=" bg-cyan-800 p-5 flex justify-center gap-4 ">
         <Link to="/Product/Men">Mens</Link>
         <Link to="/Product/Women">Womens</Link>
+        <Link to="/Product/Kids">Kids</Link>
       </div>
-      <h1>Product Page</h1>
       <Outlet />
     </div>
   );
