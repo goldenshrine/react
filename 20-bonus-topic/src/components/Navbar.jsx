@@ -1,9 +1,16 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div>
-      <button>Change theme</button>
+      <p>{props.theme}</p>
+      <button
+        onClick={() => {
+          props.setTheme("Dark");
+        }}
+      >
+        Change theme
+      </button>
     </div>
   );
 };
