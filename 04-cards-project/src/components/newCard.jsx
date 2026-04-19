@@ -1,5 +1,6 @@
 import React from "react";
 import { Bookmark } from "lucide-react";
+
 const NewCard = (props) => {
   console.log(props);
   return (

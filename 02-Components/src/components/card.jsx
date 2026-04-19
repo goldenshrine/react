@@ -12,7 +12,7 @@ const user = () => {
 export const age = 98;
 export default user; // default export
 
-from 1:06:28 to 1:17:28 */
+// from 1:06:28 to 1:17:28 */
 
 //from 1:17:28
 

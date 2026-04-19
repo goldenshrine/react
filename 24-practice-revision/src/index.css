@@ -1,0 +1,48 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 30px; */
+  font-family: 'helvetica neue'
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+
+.nav{
+  background-color: teal;
+  padding: 2px;
+  text-align: center;
+}
+.card{
+  background-color: pink;
+  margin: 20px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px;
+
+}
+
+
+
+.var{
+  background-color: pink;
+  padding: 2px;
+  text-align: center;
+  padding: 7px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.greet{
+  background-color: pink;
+  padding: 2px;
+  text-align: center;
+  padding: 7px;
+  margin: 20px;
+  border-radius: 5px;
+}
