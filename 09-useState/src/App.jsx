@@ -31,11 +31,11 @@
 
 //   function changeNum() {
 //     setNum(30);
-//     setuser("Monica"); // cut this to run own method
+//     setuser("Gyomei"); // cut this to run own method
 //   }
 
 //   function changeName() {
-//     setuser("Monica");
+//     setuser("Gyomei");
 //   }
 
 //   return (

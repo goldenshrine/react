@@ -46,3 +46,29 @@ body{
   margin: 20px;
   border-radius: 5px;
 }
+
+.count{
+  background-color: pink;
+  text-align: center;
+  padding: 50px;
+  margin: 50px;
+  border-radius: 5px;
+}
+
+.btns{
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical (not always needed) */
+  gap: 10px;
+  
+}
+button {
+  padding: 15px 30px;   /* ↑ bigger button */
+  font-size: 18px;      /* ↑ bigger text */
+  border: none;
+  background: gray;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
